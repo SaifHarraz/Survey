@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Survey Form</title>
+    <link href="stylemodifiedwithchatgpt.css" rel="stylesheet">
+</head>
+<body>  
+
+    <div class="outbody">
+        <main>
+            <h1 class="top" id="title">Saif Survey Form</h1>
+            <p class="top" id="description">Thanks for taking your time</p>
+
+            <form method="post" id="survey-form" action="mailto:saifharraz779@gmail.com" enctype="text/plain">
+                <fieldset>
+                    <label id="name-label">Name
+                        <input class="text" id="name" type="text" required name="Name" placeholder="Enter your name">
+                    </label>
+                    <label id="email-label">Email
+                        <input class="text" required type="email" id="email" name="Email" placeholder=".....@gmail.com">
+                    </label>
+                    <label id="number-label">Age (optional)
+                        <input class="text" type="number" max="105" min="13" id="number" name="Age" placeholder="Age">
+                    </label>
+
+                    <label for="dropdown">Are you a/an?</label>
+                    <select class="text" required id="dropdown" name="role">
+                        <option value="">Select your role</option>
+                        <option value="1">High school student</option>
+                        <option value="2">College student</option>
+                        <option value="3">Graduate working</option>
+                        <option value="4">Unemployed</option>
+                        <option value="5">Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <p>Would you recommend us?</p>
+                    <label for="yes"><input checked id="yes" type="radio" name="recommend" value="yes"> Yes</label>
+                    <label for="no"><input id="no" type="radio" name="recommend" value="no"> No</label>
+                    <label for="not-sure"><input id="not-sure" type="radio" name="recommend" value="not-sure"> Not sure</label>
+                </fieldset>
+
+                <fieldset>
+                    <label class="like" for="like">What do you like about us?
+                        <select class="text" required id="like" name="Like">
+                            <option value="">Select</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                        </select>
+                    </label>
+                    
+                    <p class="farp">Recommendations for improvement?</p>
+                    <label for="improve1"><input type="checkbox" id="improve1" name="improvement" value="1"> Option 1</label>
+                    <label for="improve2"><input type="checkbox" id="improve2" name="improvement" value="2"> Option 2</label>
+                    <label for="improve3"><input type="checkbox" id="improve3" name="improvement" value="3"> Option 3</label>
+
+                    <label for="suggestion"><p class="farp">What do you suggest?</p>
+                        <textarea class="text" id="suggestion" cols="50" rows="5" placeholder="Type suggestion here"></textarea>
+                    </label>
+                </fieldset>
+
+                <button type="submit" id="submit" value="Submit">Submit</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>Get in touch with us via social media</p>
+            <a href="https://www.facebook.com/share/15jbKYGKT9/" target="_blank">
+                <img src="facelogo.jpg" alt="Facebook Logo">
+            </a>  
+        </footer>
+    </div>
+
+</body>
+</html>
